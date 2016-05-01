@@ -1426,3 +1426,92 @@ Started GET "/assets/application.self.js?body=1" for 113.22.37.87 at 2016-05-01 
 
 Started GET "/assets/jquery_ujs.self.js?body=1" for 113.22.37.87 at 2016-05-01 18:52:10 +0000
 >>>>>>> origin/master
+
+
+Started GET "/assets/rails.png" for 113.22.37.87 at 2016-05-01 19:26:34 +0000
+Served asset /rails.png - 200 OK (2ms)
+
+
+Started GET "/movies" for 113.22.37.87 at 2016-05-01 19:26:36 +0000
+
+SyntaxError (/home/ubuntu/workspace/hw-bdd-tdd-cycle/rottenpotatoes/app/controllers/movies_controller.rb:2: syntax error, unexpected tLSHFT
+<<<<<<< HEAD
+  ^
+/home/ubuntu/workspace/hw-bdd-tdd-cycle/rottenpotatoes/app/controllers/movies_controller.rb:8: syntax error, unexpected tRSHFT, expecting keyword_end
+>>>>>>> origin/master
+  ^):
+  
+
+Rendered /usr/local/rvm/gems/ruby-1.9.3-p551/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+Rendered /usr/local/rvm/gems/ruby-1.9.3-p551/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (50.3ms)
+Rendered /usr/local/rvm/gems/ruby-1.9.3-p551/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (63.7ms)
+
+
+Started GET "/movies" for 113.22.37.87 at 2016-05-01 19:26:37 +0000
+
+SyntaxError (/home/ubuntu/workspace/hw-bdd-tdd-cycle/rottenpotatoes/app/controllers/movies_controller.rb:2: syntax error, unexpected tLSHFT
+<<<<<<< HEAD
+  ^
+/home/ubuntu/workspace/hw-bdd-tdd-cycle/rottenpotatoes/app/controllers/movies_controller.rb:8: syntax error, unexpected tRSHFT, expecting keyword_end
+>>>>>>> origin/master
+  ^):
+  
+
+Rendered /usr/local/rvm/gems/ruby-1.9.3-p551/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+Rendered /usr/local/rvm/gems/ruby-1.9.3-p551/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /usr/local/rvm/gems/ruby-1.9.3-p551/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.7ms)
+
+
+Started GET "/movies" for 113.22.37.87 at 2016-05-01 19:27:14 +0000
+  Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.6ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13', 'NC-17', 'R')[0m
+Rendered movies/index.html.haml within layouts/application (44.6ms)
+Cache for Asset (application.js) is stale
+/home/ankur/.rvm/gems/ruby-1.9.3-p194@global/gems/jquery-rails-2.1.1/vendor/assets/javascripts/jquery.js isn't in paths: /home/ubuntu/workspace/hw-bdd-tdd-cycle/rottenpotatoes/app/assets/images, /home/ubuntu/workspace/hw-bdd-tdd-cycle/rottenpotatoes/app/assets/javascripts, /home/ubuntu/workspace/hw-bdd-tdd-cycle/rottenpotatoes/app/assets/stylesheets, /home/ubuntu/workspace/hw-bdd-tdd-cycle/rottenpotatoes/vendor/assets/stylesheets, /usr/local/rvm/gems/ruby-1.9.3-p551/gems/jquery-rails-2.1.1/vendor/assets/javascripts
+Compiled application.js  (5ms)  (pid 52625)
+Compiled jquery.js  (3ms)  (pid 52625)
+Compiled jquery_ujs.js  (0ms)  (pid 52625)
+Completed 200 OK in 150ms (Views: 139.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 113.22.37.87 at 2016-05-01 19:27:15 +0000
+Served asset /jquery_ujs.js - 200 OK (10ms)
+
+
+Started GET "/assets/application.css?body=1" for 113.22.37.87 at 2016-05-01 19:27:15 +0000
+Served asset /application.css - 200 OK (5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 113.22.37.87 at 2016-05-01 19:27:15 +0000
+Served asset /jquery.js - 200 OK (9ms)
+
+
+Started GET "/assets/application.js?body=1" for 113.22.37.87 at 2016-05-01 19:27:15 +0000
+Served asset /application.js - 200 OK (45ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&ratings%5BG%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1&commit=Refresh" for 113.22.37.87 at 2016-05-01 19:27:23 +0000
+  Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "ratings"=>{"G"=>"1", "PG"=>"1", "PG-13"=>"1"}, "commit"=>"Refresh"}
+Redirected to https://hw-rails-intro-trantuananh1996-1.c9users.io/movies?ratings%5BG%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1
+Completed 302 Found in 2ms
+
+
+Started GET "/movies?ratings%5BG%5D=1&ratings%5BPG%5D=1&ratings%5BPG-13%5D=1" for 113.22.37.87 at 2016-05-01 19:27:23 +0000
+  Processing by MoviesController#index as HTML
+  Parameters: {"ratings"=>{"G"=>"1", "PG"=>"1", "PG-13"=>"1"}}
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN ('G', 'PG', 'PG-13')
+Rendered movies/index.html.haml within layouts/application (22.8ms)
+Completed 200 OK in 39ms (Views: 36.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 113.22.37.87 at 2016-05-01 19:27:23 +0000
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 113.22.37.87 at 2016-05-01 19:27:23 +0000
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 113.22.37.87 at 2016-05-01 19:27:23 +0000
+Served asset /application.js - 304 Not Modified (0ms)
