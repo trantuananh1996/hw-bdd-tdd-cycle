@@ -1,4 +1,4 @@
-BDD, TDD Cycle
+BDD, TDD Cycle updateed
 ===
 
 In this assignment you will use a combination of Behavior-Driven Design (BDD) and Test-Driven Development (TDD) with the Cucumber and RSpec tools to add a "find movies with same director" feature to RottenPotatoes, and deploy the resulting app on Heroku.
